@@ -1,0 +1,6 @@
+E:\GitRep\Task_2\NewStringLib\bin\Debug\NewStringLib.dll
+E:\GitRep\Task_2\NewStringLib\bin\Debug\NewStringLib.pdb
+E:\GitRep\Task_2\NewStringLib\obj\Debug\NewStringLib.csprojAssemblyReference.cache
+E:\GitRep\Task_2\NewStringLib\obj\Debug\NewStringLib.csproj.CoreCompileInputs.cache
+E:\GitRep\Task_2\NewStringLib\obj\Debug\NewStringLib.dll
+E:\GitRep\Task_2\NewStringLib\obj\Debug\NewStringLib.pdb

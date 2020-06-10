@@ -1,0 +1,7 @@
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\obj\Debug\2_1_1_CUSTOM_STRING.csprojAssemblyReference.cache
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\obj\Debug\2_1_1_CUSTOM_STRING.csproj.CoreCompileInputs.cache
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\bin\Debug\Task_2.1._OOP_okay-okay_Programming.exe.config
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\bin\Debug\Task_2.1._OOP_okay-okay_Programming.exe
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\bin\Debug\Task_2.1._OOP_okay-okay_Programming.pdb
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\obj\Debug\Task_2.1._OOP_okay-okay_Programming.exe
+E:\GitRep\Task_2\Task_2.1._OOP_okay-okay_Programming\obj\Debug\Task_2.1._OOP_okay-okay_Programming.pdb

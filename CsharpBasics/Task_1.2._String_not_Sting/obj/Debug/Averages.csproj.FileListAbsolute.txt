@@ -1,0 +1,7 @@
+D:\git.rep\Task_1.2._String_not_Sting\bin\Debug\Task_1.2._String_not_Sting.exe.config
+D:\git.rep\Task_1.2._String_not_Sting\bin\Debug\Task_1.2._String_not_Sting.exe
+D:\git.rep\Task_1.2._String_not_Sting\bin\Debug\Task_1.2._String_not_Sting.pdb
+D:\git.rep\Task_1.2._String_not_Sting\obj\Debug\Averages.csprojAssemblyReference.cache
+D:\git.rep\Task_1.2._String_not_Sting\obj\Debug\Averages.csproj.CoreCompileInputs.cache
+D:\git.rep\Task_1.2._String_not_Sting\obj\Debug\Task_1.2._String_not_Sting.exe
+D:\git.rep\Task_1.2._String_not_Sting\obj\Debug\Task_1.2._String_not_Sting.pdb

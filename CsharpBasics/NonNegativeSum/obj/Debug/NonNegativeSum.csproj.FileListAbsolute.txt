@@ -1,0 +1,7 @@
+D:\git.rep\NonNegativeSum\bin\Debug\NonNegativeSum.exe.config
+D:\git.rep\NonNegativeSum\bin\Debug\NonNegativeSum.exe
+D:\git.rep\NonNegativeSum\bin\Debug\NonNegativeSum.pdb
+D:\git.rep\NonNegativeSum\obj\Debug\NonNegativeSum.csprojAssemblyReference.cache
+D:\git.rep\NonNegativeSum\obj\Debug\NonNegativeSum.csproj.CoreCompileInputs.cache
+D:\git.rep\NonNegativeSum\obj\Debug\NonNegativeSum.exe
+D:\git.rep\NonNegativeSum\obj\Debug\NonNegativeSum.pdb

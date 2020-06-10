@@ -1,0 +1,7 @@
+D:\git.rep\NoPositive\bin\Debug\NoPositive.exe.config
+D:\git.rep\NoPositive\bin\Debug\NoPositive.exe
+D:\git.rep\NoPositive\bin\Debug\NoPositive.pdb
+D:\git.rep\NoPositive\obj\Debug\NoPositive.csprojAssemblyReference.cache
+D:\git.rep\NoPositive\obj\Debug\NoPositive.csproj.CoreCompileInputs.cache
+D:\git.rep\NoPositive\obj\Debug\NoPositive.exe
+D:\git.rep\NoPositive\obj\Debug\NoPositive.pdb

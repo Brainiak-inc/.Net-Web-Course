@@ -1,0 +1,7 @@
+D:\git.rep\SumOfNumbers\bin\Debug\SumOfNumbers.exe.config
+D:\git.rep\SumOfNumbers\bin\Debug\SumOfNumbers.exe
+D:\git.rep\SumOfNumbers\bin\Debug\SumOfNumbers.pdb
+D:\git.rep\SumOfNumbers\obj\Debug\SumOfNumbers.csprojAssemblyReference.cache
+D:\git.rep\SumOfNumbers\obj\Debug\SumOfNumbers.csproj.CoreCompileInputs.cache
+D:\git.rep\SumOfNumbers\obj\Debug\SumOfNumbers.exe
+D:\git.rep\SumOfNumbers\obj\Debug\SumOfNumbers.pdb

@@ -1,0 +1,7 @@
+D:\git.rep\doubler\bin\Debug\doubler.exe.config
+D:\git.rep\doubler\bin\Debug\doubler.exe
+D:\git.rep\doubler\bin\Debug\doubler.pdb
+D:\git.rep\doubler\obj\Debug\doubler.csproj.CoreCompileInputs.cache
+D:\git.rep\doubler\obj\Debug\doubler.exe
+D:\git.rep\doubler\obj\Debug\doubler.pdb
+D:\git.rep\doubler\obj\Debug\doubler.csprojAssemblyReference.cache

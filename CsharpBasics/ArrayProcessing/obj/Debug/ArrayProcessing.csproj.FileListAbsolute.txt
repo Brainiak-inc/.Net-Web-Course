@@ -1,0 +1,7 @@
+D:\git.rep\ArrayProcessing\bin\Debug\ArrayProcessing.exe.config
+D:\git.rep\ArrayProcessing\bin\Debug\ArrayProcessing.exe
+D:\git.rep\ArrayProcessing\bin\Debug\ArrayProcessing.pdb
+D:\git.rep\ArrayProcessing\obj\Debug\ArrayProcessing.csprojAssemblyReference.cache
+D:\git.rep\ArrayProcessing\obj\Debug\ArrayProcessing.csproj.CoreCompileInputs.cache
+D:\git.rep\ArrayProcessing\obj\Debug\ArrayProcessing.exe
+D:\git.rep\ArrayProcessing\obj\Debug\ArrayProcessing.pdb

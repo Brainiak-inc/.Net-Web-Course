@@ -1,0 +1,7 @@
+D:\git.rep\LOWERCASE\bin\Debug\LOWERCASE.exe.config
+D:\git.rep\LOWERCASE\bin\Debug\LOWERCASE.exe
+D:\git.rep\LOWERCASE\bin\Debug\LOWERCASE.pdb
+D:\git.rep\LOWERCASE\obj\Debug\LOWERCASE.csproj.CoreCompileInputs.cache
+D:\git.rep\LOWERCASE\obj\Debug\LOWERCASE.exe
+D:\git.rep\LOWERCASE\obj\Debug\LOWERCASE.pdb
+D:\git.rep\LOWERCASE\obj\Debug\LOWERCASE.csprojAssemblyReference.cache

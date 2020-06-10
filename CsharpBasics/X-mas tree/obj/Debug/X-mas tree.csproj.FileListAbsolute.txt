@@ -1,0 +1,7 @@
+D:\git.rep\X-mas tree\bin\Debug\X-mas tree.exe.config
+D:\git.rep\X-mas tree\bin\Debug\X-mas tree.exe
+D:\git.rep\X-mas tree\bin\Debug\X-mas tree.pdb
+D:\git.rep\X-mas tree\obj\Debug\X-mas tree.csproj.CoreCompileInputs.cache
+D:\git.rep\X-mas tree\obj\Debug\X-mas tree.exe
+D:\git.rep\X-mas tree\obj\Debug\X-mas tree.pdb
+D:\git.rep\X-mas tree\obj\Debug\X-mas tree.csprojAssemblyReference.cache

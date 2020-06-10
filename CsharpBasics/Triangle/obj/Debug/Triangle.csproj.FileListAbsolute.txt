@@ -1,0 +1,7 @@
+D:\git.rep\Triangle\bin\Debug\Triangle.exe.config
+D:\git.rep\Triangle\bin\Debug\Triangle.exe
+D:\git.rep\Triangle\bin\Debug\Triangle.pdb
+D:\git.rep\Triangle\obj\Debug\Triangle.csprojAssemblyReference.cache
+D:\git.rep\Triangle\obj\Debug\Triangle.csproj.CoreCompileInputs.cache
+D:\git.rep\Triangle\obj\Debug\Triangle.exe
+D:\git.rep\Triangle\obj\Debug\Triangle.pdb

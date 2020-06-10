@@ -1,0 +1,7 @@
+D:\git.rep\FontAdjustment\bin\Debug\FontAdjustment.exe.config
+D:\git.rep\FontAdjustment\bin\Debug\FontAdjustment.exe
+D:\git.rep\FontAdjustment\bin\Debug\FontAdjustment.pdb
+D:\git.rep\FontAdjustment\obj\Debug\FontAdjustment.csprojAssemblyReference.cache
+D:\git.rep\FontAdjustment\obj\Debug\FontAdjustment.csproj.CoreCompileInputs.cache
+D:\git.rep\FontAdjustment\obj\Debug\FontAdjustment.exe
+D:\git.rep\FontAdjustment\obj\Debug\FontAdjustment.pdb

@@ -1,0 +1,7 @@
+D:\git.rep\Task_1.1._The_Magnificent_Ten\obj\Debug\Rectangle.csprojAssemblyReference.cache
+D:\git.rep\Task_1.1._The_Magnificent_Ten\obj\Debug\Rectangle.csproj.CoreCompileInputs.cache
+D:\git.rep\Task_1.1._The_Magnificent_Ten\obj\Debug\Task_1.1._The_Magnificent_Ten.exe
+D:\git.rep\Task_1.1._The_Magnificent_Ten\obj\Debug\Task_1.1._The_Magnificent_Ten.pdb
+D:\git.rep\Task_1.1._The_Magnificent_Ten\bin\Debug\Task_1.1._The_Magnificent_Ten.exe.config
+D:\git.rep\Task_1.1._The_Magnificent_Ten\bin\Debug\Task_1.1._The_Magnificent_Ten.exe
+D:\git.rep\Task_1.1._The_Magnificent_Ten\bin\Debug\Task_1.1._The_Magnificent_Ten.pdb

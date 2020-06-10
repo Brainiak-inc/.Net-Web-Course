@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using NewStringLib;
 
 namespace Task_2._1._OOP_okay_okay_Programming
 {
@@ -12,40 +13,38 @@ namespace Task_2._1._OOP_okay_okay_Programming
     {
         static void Main(string[] args)
         {
+            //Comparison
             string str_1, str_2;
-            Console.WriteLine("Enter string 1: ");
 
+            Console.Write("Enter string 1: ");
             str_1 = Console.ReadLine();
-            Console.WriteLine("Enter string 2: ");
 
+            Console.Write("Enter string 2: ");
             str_2 = Console.ReadLine();
 
             Console.WriteLine(myString.StringComparison(str_1, str_2));
 
+            //Symbol searching 
+            Console.Write("Enter new sentence: \n");
+            string sentence = Console.ReadLine();
+
+            Console.Write("Enter only one symbol, which you want to find in your sentence: ");
+            char symbol = char.Parse(Console.ReadLine());
+            Console.WriteLine($"Here's your sybmbol: {myString.CharSearch(sentence, symbol)}");
+            Console.WriteLine($"Index of your symbol: {myString.IndexOf(sentence, symbol)}");
+
+            //Concatanation method
+            Console.WriteLine("Concatanating: ");
+            Console.Write("Concatenated: ");
+           string str_3 =  myString.ConcatString("Hello ", "World");
+            Console.WriteLine(str_3);
+            //Convert char array to string
+            Console.WriteLine();
+            char[] testArray = { 'f','g','t' };
+            string testStr = myString.NewToString(testArray);
+            Console.WriteLine(testStr);
+            
 
         }    
-    }
-    class myString
-    {
-        public static bool StringComparison(string str1, string str2)
-        {
-
-            char[] charArray1 = str1.ToCharArray();
-            char[] charArray2 = str2.ToCharArray();
-
-            if (charArray1.Length != charArray2.Length)
-            {
-                return false;
-            }
-            for (int i = 0; i < charArray1.Length; i++)
-            {
-                if (charArray1[i] != charArray2[i])
-                {
-                    return false;
-                }
-                
-            }
-            return true;
-        }
     }
 }

@@ -1,7 +1,0 @@
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-E:\GitRep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

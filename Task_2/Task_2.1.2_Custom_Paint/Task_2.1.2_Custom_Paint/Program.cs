@@ -10,8 +10,8 @@ namespace Task_2._1._2_Custom_Paint
         static Figure figure;
         static void Main(string[] args)
         {
-            figure = ValueSetter.constructCircle();
-            Console.WriteLine(figure);
+            figure = ValueSetter.constructRectangle();
+            Console.WriteLine(figure+"\n");
            
         }
     }

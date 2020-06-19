@@ -13,20 +13,17 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return AreaRound;
+                return areaRound;
             }
             set
             {
-                if (AreaRound > 0)
+                if (value > 0)
                 {
-                    AreaRound = value;
+                    areaRound = value;
                 }
             }
         }
-        //public Round(double x, double y, double InsideRadius) : base(x, y, InsideRadius)
-        //{
-        //    this.InsideRadius = InsideRadius;
-        //}
+
         public virtual double CalculateArea()
         {
             AreaRound = InsideRadius * InsideRadius * Math.PI;

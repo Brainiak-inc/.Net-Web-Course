@@ -13,19 +13,15 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return InsideRadius;
+                return insideRadius;
             }
             set
             {
-                if (InsideRadius > 0)
+                if (value > 0)
                 {
-                    InsideRadius = value;
+                    insideRadius = value;
                 }
             }
-        }
-        public Circle()
-        {
-            insideRadius = InsideRadius;
         }
 
         public double insidePerimetr { get; set; }

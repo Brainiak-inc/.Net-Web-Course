@@ -18,13 +18,13 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideA;
+                return sideA;
             }
             set
             {
-                if (SideA > 0)
+                if (value > 0)
                 {
-                    SideA = value;
+                    sideA = value;
                 }
             }
         }
@@ -32,21 +32,17 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideB;
+                return sideB;
             }
             set
             {
-                if (SideB > 0)
+                if (value > 0)
                 {
-                    SideB = value;
+                    sideB = value;
                 }
             }
         }
-        //public Rectangle(double x, double y, double SideA, double SideB) : base(x, y)
-        //{
-        //    sideA = SideA;
-        //    sideB = SideB;
-        //}
+ 
         public virtual double CalculatePerimetr()
         {
             perimetr = (sideA + sideB) * 2;
@@ -61,6 +57,8 @@ namespace Task_2._1._2_Custom_Paint
         }
         public override string ToString()
         {
+            CalculatePerimetr();
+            CalculateArea();
             string rectangleInfo = $"Rectangle has been created. \nPerimetr: {perimetr}. \nArea: {area}. " +
                                   $"\nCoordinate's: X: {X}, Y: {Y}.";
 

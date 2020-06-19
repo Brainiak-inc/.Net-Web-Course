@@ -17,21 +17,18 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideSquare;
+                return sideSquare;
             }
             set
             {
-                if (SideSquare > 0)
+                if (value > 0)
                 {
-                    SideSquare = value;
+                    sideSquare = value;
                 }
             }
         }
 
-        //public Square(double x, double y, double SideSquare) : base(x,y)
-        //{
-        //    SideSquare = sideSquare;
-        //}
+
         public virtual double CalculatePerimetr()
         {
             perimetr = SideSquare * 4;

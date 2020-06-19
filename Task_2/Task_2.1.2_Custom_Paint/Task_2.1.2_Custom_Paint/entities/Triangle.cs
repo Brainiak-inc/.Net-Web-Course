@@ -17,13 +17,13 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideA;
+                return triangleSideA;
             }
             set
             {
-                if (SideA > 0)
+                if (value > 0)
                 {
-                    SideA = value;
+                    triangleSideA = value;
                 }
             }
         }
@@ -32,13 +32,13 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideB;
+                return triangleSideB;
             }
             set
             {
-                if (SideB > 0)
+                if (value > 0)
                 {
-                    SideB = value;
+                    triangleSideB = value;
                 }
             }
         }
@@ -48,22 +48,16 @@ namespace Task_2._1._2_Custom_Paint
         {
             get
             {
-                return SideC;
+                return triangleSideC;
             }
             set
             {
-                if (SideC > 0)
+                if (value > 0)
                 {
-                    SideC = value;
+                    triangleSideC = value;
                 }
             }
         }
-        //public Triangle(double x, double y, double triangleSideA, double triangleSideB, double triangleSideC) : base(x,y)
-        //{
-        //    SideA = triangleSideA;
-        //    SideB = triangleSideB;
-        //    SideC = triangleSideC;
-        //}
 
         public virtual double CalculatePerimetr()
         {

@@ -54,6 +54,7 @@
     <Compile Include="Square.cs" />
     <Compile Include="Triangle.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ValueSetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

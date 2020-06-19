@@ -20,10 +20,7 @@ namespace Task_2._1._2_Custom_Paint
 
                 int chose = int.Parse(Console.ReadLine());
 
-                if (chose == 1 || chose == 2 || chose == 3)
-                {
-
-                }
+                
 
                 switch (chose)
                 {

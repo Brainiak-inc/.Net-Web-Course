@@ -43,18 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="Figure.cs" />
-    <Compile Include="Line.cs" />
+    <Compile Include="entities\Circle.cs" />
+    <Compile Include="entities\Figure.cs" />
+    <Compile Include="entities\Line.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Ring.cs" />
-    <Compile Include="Round.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="Triangle.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="ValueSetter.cs" />
+    <Compile Include="entities\Rectangle.cs" />
+    <Compile Include="entities\Ring.cs" />
+    <Compile Include="entities\Round.cs" />
+    <Compile Include="entities\Square.cs" />
+    <Compile Include="entities\Triangle.cs" />
+    <Compile Include="entities\User.cs" />
+    <Compile Include="utils\ValueSetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

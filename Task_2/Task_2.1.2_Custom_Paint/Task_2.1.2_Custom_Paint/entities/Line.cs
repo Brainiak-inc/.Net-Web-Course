@@ -25,10 +25,10 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        public Line(double x, double y, double Length) : base(x,y)
-        {
-            length = Length;
-        }
+        //public Line(double x, double y, double Length) : base(x,y)
+        //{
+        //    length = Length;
+        //}
         public override string ToString()
         {
             string lineInfo = $"Line has been created. \nLine's length: {length}. \nLine's coordinates: X: {X}, Y: {Y}.";

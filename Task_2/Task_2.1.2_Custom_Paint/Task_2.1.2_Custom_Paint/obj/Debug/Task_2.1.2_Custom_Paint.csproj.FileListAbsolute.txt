@@ -12,3 +12,10 @@ D:\git.rep\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task
 D:\git.rep\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.csproj.CoreCompileInputs.cache
 D:\git.rep\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.exe
 D:\git.rep\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.pdb
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.csprojAssemblyReference.cache
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.exe
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\obj\Debug\Task_2.1.2_Custom_Paint.pdb
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\bin\Debug\Task_2.1.2_Custom_Paint.exe.config
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\bin\Debug\Task_2.1.2_Custom_Paint.exe
+D:\git.rep\xt_net_web\Task_2\Task_2.1.2_Custom_Paint\Task_2.1.2_Custom_Paint\bin\Debug\Task_2.1.2_Custom_Paint.pdb

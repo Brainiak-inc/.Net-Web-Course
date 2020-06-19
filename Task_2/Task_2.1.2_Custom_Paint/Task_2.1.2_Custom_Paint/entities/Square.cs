@@ -28,10 +28,10 @@ namespace Task_2._1._2_Custom_Paint
             }
         }
 
-        public Square(double x, double y, double SideSquare) : base(x,y)
-        {
-            SideSquare = sideSquare;
-        }
+        //public Square(double x, double y, double SideSquare) : base(x,y)
+        //{
+        //    SideSquare = sideSquare;
+        //}
         public virtual double CalculatePerimetr()
         {
             perimetr = SideSquare * 4;

@@ -23,7 +23,7 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        public Circle(double x, double y, double InsideRadius) : base(x, y)
+        public Circle()
         {
             insideRadius = InsideRadius;
         }

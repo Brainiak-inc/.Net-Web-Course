@@ -42,11 +42,11 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        public Rectangle(double x, double y, double SideA, double SideB) : base(x, y)
-        {
-            sideA = SideA;
-            sideB = SideB;
-        }
+        //public Rectangle(double x, double y, double SideA, double SideB) : base(x, y)
+        //{
+        //    sideA = SideA;
+        //    sideB = SideB;
+        //}
         public virtual double CalculatePerimetr()
         {
             perimetr = (sideA + sideB) * 2;

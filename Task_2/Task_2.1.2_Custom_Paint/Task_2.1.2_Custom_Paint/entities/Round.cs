@@ -23,10 +23,10 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        public Round(double x, double y, double InsideRadius) : base(x, y, InsideRadius)
-        {
-            this.InsideRadius = InsideRadius;
-        }
+        //public Round(double x, double y, double InsideRadius) : base(x, y, InsideRadius)
+        //{
+        //    this.InsideRadius = InsideRadius;
+        //}
         public virtual double CalculateArea()
         {
             AreaRound = InsideRadius * InsideRadius * Math.PI;

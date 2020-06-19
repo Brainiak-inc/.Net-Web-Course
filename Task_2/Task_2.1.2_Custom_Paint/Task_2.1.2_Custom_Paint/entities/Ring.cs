@@ -27,10 +27,10 @@ namespace Task_2._1._2_Custom_Paint
         public double outsidePerimetr { get; set; }
         public double RingArea { get; set; }
 
-        public Ring(double x, double y, double InsideRadius, double OutsideRadius) : base(x, y, InsideRadius)
-        {
-            outsideRadius = OutsideRadius;
-        }
+        //public Ring(double x, double y, double InsideRadius, double OutsideRadius) : base(x, y, InsideRadius)
+        //{
+        //    outsideRadius = OutsideRadius;
+        //}
         public double calculateArea()
         {
             RingArea = Math.PI * (outsideRadius * outsideRadius) - (InsideRadius * InsideRadius);

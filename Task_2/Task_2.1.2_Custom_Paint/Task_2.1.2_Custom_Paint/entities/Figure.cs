@@ -38,10 +38,10 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        protected Figure(double X, double Y)
-        {
-            this.x = X;
-            this.y = Y;
-        }
+        //protected Figure(double X, double Y)
+        //{
+        //    this.x = X;
+        //    this.y = Y;
+        //}
     }
 }

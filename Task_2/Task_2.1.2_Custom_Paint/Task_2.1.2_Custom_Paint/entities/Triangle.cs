@@ -58,12 +58,12 @@ namespace Task_2._1._2_Custom_Paint
                 }
             }
         }
-        public Triangle(double x, double y, double triangleSideA, double triangleSideB, double triangleSideC) : base(x,y)
-        {
-            SideA = triangleSideA;
-            SideB = triangleSideB;
-            SideC = triangleSideC;
-        }
+        //public Triangle(double x, double y, double triangleSideA, double triangleSideB, double triangleSideC) : base(x,y)
+        //{
+        //    SideA = triangleSideA;
+        //    SideB = triangleSideB;
+        //    SideC = triangleSideC;
+        //}
 
         public virtual double CalculatePerimetr()
         {

@@ -28,7 +28,7 @@ namespace Task_2._1._2_Custom_Paint
         public double insideRingPerimetr { get; set; }
         public double RingArea { get; set; }
 
-        public double calculateArea()
+        public virtual double calculateArea()
         {
             RingArea = Math.PI * (outsideRadius * outsideRadius) - (InsideRadius * InsideRadius);
 
@@ -37,7 +37,7 @@ namespace Task_2._1._2_Custom_Paint
 
         public virtual double calculateinsideRingPerimetr()
         {
-            double insideRingPerimetr = 2 * Math.PI * InsideRadius;
+            insideRingPerimetr = 2 * Math.PI * InsideRadius;
             return insideRingPerimetr;
         }
         public virtual double calculateOutsidePerimetr()

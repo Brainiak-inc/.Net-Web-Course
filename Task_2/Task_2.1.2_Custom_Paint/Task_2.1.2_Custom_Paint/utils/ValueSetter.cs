@@ -12,6 +12,7 @@ namespace Task_2._1._2_Custom_Paint
     class ValueSetter
     {
         static Figure figure;
+        static User user;
         static double value;
 
         static private void setXY()
@@ -95,7 +96,7 @@ namespace Task_2._1._2_Custom_Paint
                 Console.WriteLine("Enter positiv value: ");
                 validatorOutsideRadius = double.TryParse(Console.ReadLine(), out value);
                 figure.OutsideRadius = value;
-            }else if(figure.InsideRadius > value)
+            }else if(figure.InsideRadius > value || figure.InsideRadius == value)
             {
                 Console.WriteLine("Outer radius have to be bigger, then inner, try again: ");
                 validatorOutsideRadius = double.TryParse(Console.ReadLine(), out value);
@@ -255,6 +256,16 @@ namespace Task_2._1._2_Custom_Paint
                 figure.SideC = value;
             }
         }
+        static private void setUser(User user)
+        {
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            user.UserName = name;
+
+            Console.Write("Enter your surname: \n");
+            string surname = Console.ReadLine();
+            user.UserSurname = surname;
+        }
 
 
         public static Figure constructCircle() 
@@ -308,6 +319,12 @@ namespace Task_2._1._2_Custom_Paint
             setXY();
             setTriangleSides((Triangle)figure);
             return figure;
+        }
+        public static User constructUser()
+        {
+            user = new User();
+            setUser(user);
+            return user;
         }
 
     }

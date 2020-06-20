@@ -21,10 +21,7 @@ namespace Task_2._1._2_Custom_Paint
             }
             set
             {
-                if (value > 0)
-                {
-                    sideSquare = value;
-                }
+                sideSquare = value;
             }
         }
 
@@ -43,6 +40,9 @@ namespace Task_2._1._2_Custom_Paint
         }
         public override string ToString()
         {
+            CalculatePerimetr();
+            CalculateArea();
+
             string squareInfo = $"Square has been created. \nPerimetr: {perimetr}. \nArea: {area}. " +
                                   $"\nCoordinate's: X: {X}, Y: {Y}.";
 

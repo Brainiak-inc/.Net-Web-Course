@@ -19,10 +19,7 @@ namespace Task_2._1._2_Custom_Paint
             }
             set
             {
-                if (value < 0)
-                {
-                    length = value;
-                }
+                length = value;
             }
         }
 

@@ -15,6 +15,7 @@ namespace Task_2._1._OOP_okay_okay_Programming
         {
             //Comparison
             string str_1, str_2;
+            char symbol;
 
             Console.Write("Enter string 1: ");
             str_1 = Console.ReadLine();
@@ -29,14 +30,21 @@ namespace Task_2._1._OOP_okay_okay_Programming
             string sentence = Console.ReadLine();
 
             Console.Write("Enter only one symbol, which you want to find in your sentence: ");
-            char symbol = char.Parse(Console.ReadLine());
+
+            bool symbolValidation = char.TryParse(Console.ReadLine(), out symbol);
+
+            while (symbolValidation == false)
+            {
+                Console.WriteLine("Enter correct symbol: ");
+                symbolValidation = char.TryParse(Console.ReadLine(), out symbol);
+            }
             Console.WriteLine($"Here's your sybmbol: {myString.CharSearch(sentence, symbol)}");
             Console.WriteLine($"Index of your symbol: {myString.IndexOf(sentence, symbol)}");
 
             //Concatanation method
             Console.WriteLine("Concatanating: ");
             Console.Write("Concatenated: ");
-           string str_3 =  myString.ConcatString("Hello ", "World");
+            string str_3 =  myString.ConcatString("Hello ", "World");
             Console.WriteLine(str_3);
             //Convert char array to string
             Console.WriteLine();

@@ -22,7 +22,7 @@ namespace Task_2._1._2_Custom_Paint
             while (!exit)
             {
                 Console.Write("Chose figure: ");
-                Console.WriteLine("\n1.Circle \n2.Round \n3.Ring \n4.Rectangle \n5. Line \n6.Square \n7.Triangle \n8.Change user \n9. Exit");
+                Console.WriteLine("\n1.Circle \n2.Round \n3.Ring \n4.Rectangle \n5.Line \n6.Square \n7.Triangle \n8.Change user \n9.Exit");
                 Console.Write("\nFigure: ");
                 userChoseValidator = int.TryParse(Console.ReadLine(), out userChose);
 

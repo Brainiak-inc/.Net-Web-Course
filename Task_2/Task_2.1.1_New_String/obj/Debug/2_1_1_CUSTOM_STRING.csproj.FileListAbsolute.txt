@@ -13,3 +13,11 @@ D:\git.rep\Task_2\Task_2.1.1_New_String\obj\Debug\2_1_1_CUSTOM_STRING.csproj.Cor
 D:\git.rep\Task_2\Task_2.1.1_New_String\obj\Debug\2_1_1_CUSTOM_STRING.csproj.CopyComplete
 D:\git.rep\Task_2\Task_2.1.1_New_String\obj\Debug\Task_2.1._OOP_okay-okay_Programming.exe
 D:\git.rep\Task_2\Task_2.1.1_New_String\obj\Debug\Task_2.1._OOP_okay-okay_Programming.pdb
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\bin\Debug\Task_2.1._OOP_okay-okay_Programming.exe.config
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\bin\Debug\Task_2.1._OOP_okay-okay_Programming.exe
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\bin\Debug\Task_2.1._OOP_okay-okay_Programming.pdb
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\obj\Debug\2_1_1_CUSTOM_STRING.csprojAssemblyReference.cache
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\obj\Debug\2_1_1_CUSTOM_STRING.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\obj\Debug\2_1_1_CUSTOM_STRING.csproj.CopyComplete
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\obj\Debug\Task_2.1._OOP_okay-okay_Programming.exe
+D:\git.rep\xt_net_web\Task_2\Task_2.1.1_New_String\obj\Debug\Task_2.1._OOP_okay-okay_Programming.pdb

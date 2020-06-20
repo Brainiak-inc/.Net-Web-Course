@@ -152,7 +152,7 @@ namespace Task_2._1._2_Custom_Paint
                 figure.SideA = value;
             }
 
-            Console.Write("Enter side A: ");
+            Console.Write("Enter side B: ");
             bool validatorB = double.TryParse(Console.ReadLine(), out value);
 
             if (validatorB == false)
@@ -262,7 +262,7 @@ namespace Task_2._1._2_Custom_Paint
             string name = Console.ReadLine();
             user.UserName = name;
 
-            Console.Write("Enter your surname: \n");
+            Console.Write("Enter your surname: ");
             string surname = Console.ReadLine();
             user.UserSurname = surname;
         }

@@ -18,10 +18,7 @@ namespace Task_2._1._2_Custom_Paint
             }
             set
             {
-                if (value > 0)
-                {
-                    outsideRadius = value;
-                }
+                outsideRadius = value;
             }
         }
         public double outsidePerimetr { get; set; }

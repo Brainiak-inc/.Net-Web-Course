@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Task2.2_GameDevelopment")]
+[assembly: AssemblyTitle("Game")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Task2.2_GameDevelopment")]
+[assembly: AssemblyProduct("Game")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("4a6b2857-ddee-423c-b067-beb815bc4be3")]
+[assembly: Guid("141fc4fb-3c48-47b1-a7e9-5305371ccff9")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

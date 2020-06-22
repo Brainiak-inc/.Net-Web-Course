@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A6B2857-DDEE-423C-B067-BEB815BC4BE3}</ProjectGuid>
+    <ProjectGuid>{141FC4FB-3C48-47B1-A7E9-5305371CCFF9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task2._2_GameDevelopment</RootNamespace>
-    <AssemblyName>Task2.2_GameDevelopment</AssemblyName>
+    <RootNamespace>Game</RootNamespace>
+    <AssemblyName>Game</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameElements\Board.cs" />
+    <Compile Include="GameElements\Character.cs" />
+    <Compile Include="GameElements\Bonus.cs" />
+    <Compile Include="GameElements\Bear.cs" />
+    <Compile Include="GameElements\Direction.cs" />
+    <Compile Include="GameElements\Bloaters.cs" />
+    <Compile Include="GameElements\Clicker.cs" />
+    <Compile Include="GameElements\Enemies.cs" />
+    <Compile Include="GameElements\Field.cs" />
+    <Compile Include="GameElements\Infected.cs" />
+    <Compile Include="GameElements\Player.cs" />
+    <Compile Include="GameElements\IAttackable.cs" />
+    <Compile Include="GameElements\IMovable.cs" />
+    <Compile Include="GameElements\IStoppable.cs" />
+    <Compile Include="GameElements\IUpable.cs" />
+    <Compile Include="GameElements\Pills.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameElements\Runner.cs" />
+    <Compile Include="GameElements\Skills.cs" />
+    <Compile Include="GameElements\Stalcker.cs" />
+    <Compile Include="GameElements\Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

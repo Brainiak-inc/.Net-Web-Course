@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task2._2_GameDevelopment
+namespace Game
 {
-    class Program
+    interface IStoppable
     {
-        static void Main(string[] args)
-        {
-        }
+        void Stop(Board board, double speed);
     }
 }

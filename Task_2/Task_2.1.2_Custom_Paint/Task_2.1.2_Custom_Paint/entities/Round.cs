@@ -32,7 +32,7 @@ namespace Task_2._1._2_Custom_Paint
         public override string ToString()
         {
             CalculateArea();
-            getInsidePerimentr();
+            GetInsidePerimentr();
 
             string roundInfo = $"Round has been created. \nRadius: {InsideRadius}. \nPerimetr: {insidePerimetr}. \nRound's area: {AreaRound} " +
                 $"\nCircle's coordinates: X: {X}, Y: {Y}";

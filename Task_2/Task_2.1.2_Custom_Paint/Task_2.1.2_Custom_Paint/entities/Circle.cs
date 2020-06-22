@@ -25,14 +25,14 @@ namespace Task_2._1._2_Custom_Paint
         }
 
         public double insidePerimetr { get; set; }
-        public virtual double getInsidePerimentr()
+        public virtual double GetInsidePerimentr()
         {
             insidePerimetr = 2 * Math.PI * insideRadius;
             return insidePerimetr;
         }
         public override string ToString()
         {
-            getInsidePerimentr();
+            GetInsidePerimentr();
 
             string circleInfo = $"Circle has been created. \nRadius: {insideRadius}. \nPerimetr: {insidePerimetr}. \nCircle's coordinates: X: {X}, Y: {Y}";
 

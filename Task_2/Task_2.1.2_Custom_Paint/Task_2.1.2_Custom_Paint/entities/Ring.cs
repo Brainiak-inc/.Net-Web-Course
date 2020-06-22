@@ -23,34 +23,34 @@ namespace Task_2._1._2_Custom_Paint
         }
         public double outsidePerimetr { get; set; }
         public double insideRingPerimetr { get; set; }
-        public double RingArea { get; set; }
+        public double ringArea { get; set; }
 
-        public virtual double calculateArea()
+        public virtual double CalculateArea()
         {
-            RingArea = Math.PI * (outsideRadius * outsideRadius) - (InsideRadius * InsideRadius);
+            ringArea = Math.PI * (outsideRadius * outsideRadius) - (InsideRadius * InsideRadius);
 
-            return RingArea;
+            return ringArea;
         }
 
-        public virtual double calculateinsideRingPerimetr()
+        public virtual double CalculateinsideRingPerimetr()
         {
             insideRingPerimetr = 2 * Math.PI * InsideRadius;
             return insideRingPerimetr;
         }
-        public virtual double calculateOutsidePerimetr()
+        public virtual double CalculateOutsidePerimetr()
         {
             outsidePerimetr = 2 * Math.PI * outsideRadius;
             return outsidePerimetr;
         }
         public override string ToString()
         {
-            calculateArea();
-            calculateinsideRingPerimetr();
-            calculateOutsidePerimetr();
+            CalculateArea();
+            CalculateinsideRingPerimetr();
+            CalculateOutsidePerimetr();
 
             string ringInfo = $"Ring has been created. \nInside radius: {InsideRadius}. " +
                 $"\nOutside radius: {outsideRadius}. \nInside perimetr: {insideRingPerimetr}. \nOutside perimetr: {outsidePerimetr}" +
-                $" \nCircle's coordinates: X: {X}, Y: {Y}. \nRing's area: {RingArea}";
+                $" \nCircle's coordinates: X: {X}, Y: {Y}. \nRing's area: {ringArea}";
 
             return ringInfo;
         }

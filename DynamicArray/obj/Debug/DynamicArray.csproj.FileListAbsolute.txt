@@ -1,0 +1,9 @@
+D:\git.rep\xt_net_web\DynamicArray\bin\Debug\DynamicArray.exe.config
+D:\git.rep\xt_net_web\DynamicArray\bin\Debug\DynamicArray.exe
+D:\git.rep\xt_net_web\DynamicArray\bin\Debug\DynamicArray.pdb
+D:\git.rep\xt_net_web\DynamicArray\obj\Debug\DynamicArray.csprojAssemblyReference.cache
+D:\git.rep\xt_net_web\DynamicArray\obj\Debug\DynamicArray.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\DynamicArray\obj\Debug\DynamicArray.csproj.CopyComplete
+D:\git.rep\xt_net_web\DynamicArray\obj\Debug\DynamicArray.exe
+D:\git.rep\xt_net_web\DynamicArray\obj\Debug\DynamicArray.pdb
+D:\git.rep\xt_net_web\DynamicArray\bin\Debug\DynamicArraLibrary.dll

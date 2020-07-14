@@ -1,0 +1,7 @@
+D:\git.rep\xt_net_web\Text_analyser\bin\Debug\Text_analyser.exe.config
+D:\git.rep\xt_net_web\Text_analyser\bin\Debug\Text_analyser.exe
+D:\git.rep\xt_net_web\Text_analyser\bin\Debug\Text_analyser.pdb
+D:\git.rep\xt_net_web\Text_analyser\obj\Debug\Task 3_1_2.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\Text_analyser\obj\Debug\Text_analyser.exe
+D:\git.rep\xt_net_web\Text_analyser\obj\Debug\Text_analyser.pdb
+D:\git.rep\xt_net_web\Text_analyser\obj\Debug\Task 3_1_2.csprojAssemblyReference.cache

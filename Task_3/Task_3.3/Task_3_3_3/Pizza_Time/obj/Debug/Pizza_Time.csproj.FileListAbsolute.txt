@@ -1,0 +1,7 @@
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\obj\Debug\Pizza_Time.csprojAssemblyReference.cache
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\obj\Debug\Pizza_Time.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\bin\Debug\Pizza_Time.exe.config
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\bin\Debug\Pizza_Time.exe
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\bin\Debug\Pizza_Time.pdb
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\obj\Debug\Pizza_Time.exe
+D:\git.rep\xt_net_web\Task_3\Task_3.3\Task_3_3_3\Pizza_Time\obj\Debug\Pizza_Time.pdb

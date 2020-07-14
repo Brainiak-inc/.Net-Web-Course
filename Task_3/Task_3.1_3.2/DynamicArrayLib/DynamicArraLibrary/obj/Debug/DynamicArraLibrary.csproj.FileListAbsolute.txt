@@ -1,0 +1,5 @@
+D:\git.rep\xt_net_web\Task_3\DynamicArrayLib\DynamicArraLibrary\obj\Debug\DynamicArraLibrary.csproj.CoreCompileInputs.cache
+D:\git.rep\xt_net_web\Task_3\DynamicArrayLib\DynamicArraLibrary\bin\Debug\DynamicArraLibrary.dll
+D:\git.rep\xt_net_web\Task_3\DynamicArrayLib\DynamicArraLibrary\bin\Debug\DynamicArraLibrary.pdb
+D:\git.rep\xt_net_web\Task_3\DynamicArrayLib\DynamicArraLibrary\obj\Debug\DynamicArraLibrary.dll
+D:\git.rep\xt_net_web\Task_3\DynamicArrayLib\DynamicArraLibrary\obj\Debug\DynamicArraLibrary.pdb

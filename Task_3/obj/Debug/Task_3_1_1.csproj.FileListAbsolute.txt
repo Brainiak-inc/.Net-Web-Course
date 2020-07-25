@@ -4,3 +4,4 @@ D:\git.rep\xt_net_web\Task_3\bin\Debug\Task_3.1._Weakest_Text.pdb
 D:\git.rep\xt_net_web\Task_3\obj\Debug\Task_3_1_1.csproj.CoreCompileInputs.cache
 D:\git.rep\xt_net_web\Task_3\obj\Debug\Task_3.1._Weakest_Text.exe
 D:\git.rep\xt_net_web\Task_3\obj\Debug\Task_3.1._Weakest_Text.pdb
+D:\git.rep\xt_net_web\Task_3\obj\Debug\Task_3_1_1.csprojAssemblyReference.cache

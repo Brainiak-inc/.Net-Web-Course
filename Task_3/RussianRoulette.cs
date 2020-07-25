@@ -24,12 +24,12 @@ namespace Task_3
                 List<int> peopleList = new List<int>();
 
                 Console.Write("Enter number of the people in the circle: ");
-                Validator(listLenght);
+                int.TryParse(Console.ReadLine(), out listLenght);
 
 
 
                 Console.Write("Enter number of the person, who's gonna be killed each round: ");
-                Validator(number);
+                int.TryParse(Console.ReadLine(), out number);
 
                 CreateList(peopleList, listLenght);
 
@@ -41,25 +41,14 @@ namespace Task_3
 
             }
         }
-        private int Validator(int checkNumber)
-        {
-            while (checkNumber <= 0)
-            {
-                bool check;
-                Console.WriteLine("Enter positive value: ");
-                string str = Console.ReadLine();
-                check = int.TryParse(str, out checkNumber);
-            }
-
-                return checkNumber;
-            }
-            private void CreateList(List<int> peopleList, int length)
-        {
+        
+         private void CreateList(List<int> peopleList, int length)
+         {
             for (int i = 0; i < length; i++)
             {
                 peopleList.Add(i);
             }
-        }
+         }
         private static void DeleteElements<T>(List<T> peopleList, int number)
         {
 

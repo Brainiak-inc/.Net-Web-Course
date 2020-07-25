@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DynamicArraLibrary;
 
-namespace Task_3
+namespace NewGitFilesApp.UIElements
 {
-    class Program
+    internal enum UserChoice
     {
-        static void Main(string[] args)
-        {
-        }
+        None,
+        ObservationMode,
+        RollbackChanges,
     }
 }

@@ -11,11 +11,18 @@ namespace NewGitFilesApp
     {
         static void Main(string[] args)
         {
-            FilesGetter getFile = new FilesGetter();
+            
+            Backup getFile = new Backup();
 
             Console.WriteLine("Enter path: ");
             getFile.directory = Console.ReadLine();
-            getFile.GetFolder();    
+
+            string path = getFile.directory;
+
+            getFile.GetFolder();
+            Console.WriteLine("*****************************");
+
+            FileWatcher.Run(path);
         }
     }
 }

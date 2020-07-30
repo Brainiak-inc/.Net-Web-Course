@@ -1,6 +1,7 @@
 ﻿using NewGitFilesApp.utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +12,11 @@ namespace NewGitFilesApp
     {
         static void Main(string[] args)
         {
-            
-            Backup getFile = new Backup();
-
-            Console.WriteLine("Enter path: ");
-            getFile.directory = Console.ReadLine();
-
-            string path = getFile.directory;
-
-            getFile.GetFolder();
-            Console.WriteLine("*****************************");
-
-            FileWatcher.Run(path);
+            string folder = Console.ReadLine();
+            FileWatcher.Watcher();
+            DirectoryInfo directoryInfo = new DirectoryInfo(folder);
+            FileWatcher.CheckFolder(directoryInfo);
+            Console.ReadKey();
         }
     }
 }

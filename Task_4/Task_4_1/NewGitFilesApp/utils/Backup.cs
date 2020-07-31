@@ -53,9 +53,15 @@ namespace NewGitFilesApp.utils
             }
             return chek;
         }
-        public static void BackUpMaker()
+        public static void BackUpMaker(DateTime inputDate)
         {
-
+            for (int i = 0; i < _dict.Count; i++)
+            {
+                if (_dict[i + 1].Item2.Equals(inputDate))
+                {
+                    using (StreamWriter streamWriter = File.CreateText(_dict[i + 1].Item3)) streamWriter.WriteLine(_dict[i + 1].Item4);
+                }
+            }
         }
     }
 }

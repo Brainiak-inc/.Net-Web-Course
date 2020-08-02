@@ -26,7 +26,7 @@ namespace NewGitFilesApp.utils
             {
                 int id = Int32.Parse(note["ID"].InnerText);
                 string name = note["Name"].InnerText;
-                DateTime date = DateTime.ParseExact(note["LastWritten"].InnerText, "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                DateTime date = DateTime.ParseExact(note["LastWritten"].InnerText, "dd MMM yyyy hh:mm tt p\\s\\t", CultureInfo.InvariantCulture);
                 string path = note["Full path"].InnerText;
                 string text = note["Text"].InnerText;
                 _dict.Add(id, new Tuple<string, DateTime, string, string>(name, date, path, text));

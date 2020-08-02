@@ -44,11 +44,11 @@ namespace NewGitFilesApp.utils
                 _watcher.Renamed += OnRenamed;
 
                 _watcher.EnableRaisingEvents = true;
-                Console.WriteLine("Press 'Q' to leave watching mode.");
+                Console.WriteLine("Press 'Q' to leave watching mode.\n");
 
                 while (Console.ReadKey().Key != ConsoleKey.Q) ;
                 _changeReport.Add(_head);
-                _changeReport.Save(@"C:\temp\temp.xm");    
+                _changeReport.Save(@"C:\temp\temp.xml");    
             }
         }
         private static void OnChanged(object source, FileSystemEventArgs e)
@@ -68,8 +68,8 @@ namespace NewGitFilesApp.utils
                                 XElement note = new XElement("Note");
                                 XElement id = new XElement("ID", _counter);
                                 XElement name = new XElement("Name", e.Name);
-                                XElement lastWritten = new XElement("Last written", dt.ToString("dd.MM.yyyy HH.mm.ss"));
-                                XElement fullPath = new XElement("Full path", e.FullPath);
+                                XElement lastWritten = new XElement("LastWritten", dt.ToString("dd.MM.yyyy,HH.mm.ss"));
+                                XElement fullPath = new XElement("FullPath", e.FullPath);
                                 XElement text = new XElement("Text", streamReader.ReadToEnd());
                                 note.Add(id);
                                 note.Add(name);

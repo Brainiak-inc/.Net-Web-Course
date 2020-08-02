@@ -14,9 +14,9 @@ namespace NewGitFilesApp
         private static string _checker;
         static void Main(string[] args)
         {
-            DirectoryInfo folder = new DirectoryInfo(@"C:\temp"); 
+            DirectoryInfo folder = new DirectoryInfo(@"C:\temp");
 
-            Console.WriteLine("Enter 1 ot 2: ");
+            Console.WriteLine("Enter: \n1. Watching mode \n2. Changing information\n After input press 'Enter'");
 
             string userChoice = Console.ReadLine();
 
@@ -30,9 +30,9 @@ namespace NewGitFilesApp
             {
                 Console.WriteLine("Information of all chenges. ");
                 Backup.DisplayXmlInfo();
-                Console.WriteLine("Enter the backup datein format dd.MM.yyyy HH:mm:ss");
+                Console.WriteLine("Enter the backup date in format dd.MM.yyyy HH:mm:ss");
                 _checker = Console.ReadLine();
-                if (DateTime.TryParseExact(_checker, "dd.MM.yyyy HH: mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out var inputDate)) 
+                if (DateTime.TryParseExact(_checker, "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out var inputDate)) 
                 {
                     if (Backup.CheckDate(inputDate))
                     {

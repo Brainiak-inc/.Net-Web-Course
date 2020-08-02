@@ -5,3 +5,10 @@ D:\git.rep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.cs
 D:\git.rep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.csproj.CoreCompileInputs.cache
 D:\git.rep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.exe
 D:\git.rep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.pdb
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\bin\Debug\NewGitFilesApp.exe.config
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\bin\Debug\NewGitFilesApp.exe
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\bin\Debug\NewGitFilesApp.pdb
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.csprojAssemblyReference.cache
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.csproj.CoreCompileInputs.cache
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.exe
+E:\GitRep\xt_net_web\Task_4\Task_4_1\NewGitFilesApp\obj\Debug\NewGitFilesApp.pdb

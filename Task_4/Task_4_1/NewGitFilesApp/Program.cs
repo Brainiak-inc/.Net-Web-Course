@@ -11,6 +11,7 @@ namespace NewGitFilesApp
         static void Main(string[] args)
         {
             DirectoryInfo folder = new DirectoryInfo(@"C:\temp");
+            Directory.CreateDirectory(@"C:\temp");
 
             Console.WriteLine("Enter: \n1. Watching mode \n2. Changing information\n After input press 'Enter'");
 

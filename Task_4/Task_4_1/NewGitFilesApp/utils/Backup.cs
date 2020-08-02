@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using System.Runtime.Remoting.Messaging;
 using System.Xml;
 using System.Globalization;
+using System.Security.Permissions;
 
 namespace NewGitFilesApp.utils
 {
+    
     class Backup
     {
         private static Dictionary<int, Tuple<string, DateTime, string, string>> _dict = new Dictionary<int, Tuple<string, DateTime, string, string>>();
@@ -17,7 +19,7 @@ namespace NewGitFilesApp.utils
         private static void XmlInfo()
         {
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(@"D:\TestsApps\TestFolder"); //Change this directory
+            xmlDoc.Load(@"C:\temp\temp.xml"); 
 
             XmlNodeList noteList = xmlDoc.GetElementsByTagName("Note");
             foreach (XmlNode note in noteList)
@@ -41,7 +43,7 @@ namespace NewGitFilesApp.utils
                     $"Changed: {value.Item2}. Path {value.Item3}. Inner text: \n{value.Item4}");
             }
         }
-        public static bool ChekDate(DateTime inputDate)
+        public static bool CheckDate(DateTime inputDate)
         {
             bool chek = false;
             for (int i = 0; i < _dict.Count; i++)

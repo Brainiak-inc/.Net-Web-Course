@@ -10,6 +10,7 @@ using System.Threading;
 
 namespace NewGitFilesApp.utils
 {
+    
     class FileWatcher
     {
         private static FileSystemWatcher _watcher = new FileSystemWatcher();
@@ -25,19 +26,18 @@ namespace NewGitFilesApp.utils
                 CheckFolder(directoryInfo);
             }
         }
+        [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
         public static void Watcher()
         {
-            //folder = @"D:\TestsApps\TestFolder";
-
             using (_watcher)
             {
-
-                _watcher.Path = @"C:\Temp";
+                _watcher.IncludeSubdirectories = true;
+                _watcher.Path = @"C:\temp";
                 _watcher.NotifyFilter = NotifyFilters.LastAccess
                                      | NotifyFilters.LastWrite
                                      | NotifyFilters.FileName
                                      | NotifyFilters.DirectoryName;
-                _watcher.Filter = ".txt";
+                _watcher.Filter = "*.txt";
                 _watcher.Changed += OnChanged;
                 _watcher.Created += OnChanged;
                 _watcher.Deleted += OnChanged;
@@ -48,7 +48,7 @@ namespace NewGitFilesApp.utils
 
                 while (Console.ReadKey().Key != ConsoleKey.Q) ;
                 _changeReport.Add(_head);
-                _changeReport.Save(@"D:\TestsApps\TestFolder");    //Change directory to defolt later
+                _changeReport.Save(@"C:\temp\temp.xm");    
             }
         }
         private static void OnChanged(object source, FileSystemEventArgs e)
@@ -82,7 +82,7 @@ namespace NewGitFilesApp.utils
                             }
                         }
                     }
-                    catch (IOException ex)
+                    catch (IOException)
                     {
                         Console.WriteLine("Waiting for the file logging...");
                     }

@@ -1,15 +1,18 @@
-var words = "У попа была собака"
-var resultString = ""
+function CharRemover (userInput) {
+	let result = "";
 
-var charArray = words.split([" ", ",", ".", "?","!", "!?", "?!"])
+	for(let i; i < userInput.length; i++){
+		if(i.charCodeAt(i) < 32 || i.charCodeAt(i) > 72){
+			if(userInput.indexOf(userInput[i]) == userInput.lastIndexOf(userInput[i])){
+				result += userInput[i];
+			}
+		}else {
+			result += userInput[i];
+		}
+	}	
+	return result;
+}
 
-charArray.forEach(function(simbol, i, charArray){
-   if(words.includes(simbol)){
-    resultString += simbol
-   } else{
-    resultString += simbol
-    resultString += simbol
-   }
-});
+let userInput = "У попа была собака";
 
-console.log(resultString)
+console.log(CharRemover(userInput));

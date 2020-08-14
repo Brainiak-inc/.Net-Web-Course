@@ -1,18 +1,25 @@
-function CharRemover (userInput) {
-	let result = "";
+function CharRemover(){
+	let userInput = document.getElementById("userInput");
+	let splitter = ["?", "!", ".", ",", "!?", "?!", ";", " ",];
+	let letters = {}, result;
 
-	for(let i; i < userInput.length; i++){
-		if(i.charCodeAt(i) < 32 || i.charCodeAt(i) > 72){
-			if(userInput.indexOf(userInput[i]) == userInput.lastIndexOf(userInput[i])){
-				result += userInput[i];
+	let words = userInput.split(' ');
+
+	words.forEach(function (word) {
+		word.split('').forEach(function(letter, i){
+			if(!letters[letter] && splitter.indexOf(letter) == -1 && -1 != word.indexOf(letter, i + 1)){
+				letters[letter] = 1;
 			}
-		}else {
-			result += userInput[i];
-		}
-	}	
-	return result;
+		});
+	});
+	result = userInput.split('').filter(function (v){
+		return !letters[v];
+	}).join('');
+
+	//alert(result);
+				
+	let p = document.createElement('p');
+	p.innerHTML = "<p>"result"</p>";
+
+	document.body.append(p);
 }
-
-let userInput = "У попа была собака";
-
-console.log(CharRemover(userInput));

@@ -1,5 +1,5 @@
 function CharRemover(){
-	let userInput = document.getElementById("userInput");
+	let userInput = document.getElementById("userInput").value;
 	let splitter = ["?", "!", ".", ",", "!?", "?!", ";", " ",];
 	let letters = {}, result;
 
@@ -16,10 +16,6 @@ function CharRemover(){
 		return !letters[v];
 	}).join('');
 
-	//alert(result);
-				
-	let p = document.createElement('p');
-	p.innerHTML = "<p>"result"</p>";
+	alert(result);
 
-	document.body.append(p);
 }

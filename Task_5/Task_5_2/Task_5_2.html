@@ -13,7 +13,10 @@
 	</header>
 	<main>
 		<input class="User_input" id="userInput" type="text" name="user input" placeholder="Enter mathematical expression">
-		<button type="button" id="showResult" onclick="Calculator()">Show result</button>
+		<br>
+		<input class="_Result" id="Result" type="text" name="user input" placeholder="Result">
+		<br>
+		<button type="button" id="showResult" onclick="getElementById('Result').value = Calculator(getElementById('userInput').value)">Show result</button>
 	</main>
 	<footer>
 		

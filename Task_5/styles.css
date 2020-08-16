@@ -4,9 +4,9 @@
 	font-weight: 300;
 }
 body {
-	background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -33,9 +33,9 @@ body {
 	border: none;
 	margin-top:  15px;
 
-	background: #373B44;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 
@@ -53,18 +53,6 @@ body {
 #showResult:hover{
 	opacity: .9;
 }
-#Result{
-	display: block;
-	border: none;
-	background: rgba(255, 255, 255, .5);
-	border-radius: 10px;
-	padding: 20px;
-	color:  black;
-	outline: none;
-	width: 50%;
-	font-size: 30px;
-	font-weight: 300;
-}
 .link {
   color: white; 
   line-height: 1.2; 
@@ -76,7 +64,7 @@ body {
   content: "";
   height: 100%;
   min-width: 4px;
-  background: #2C5364;
+  background: #243B55;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -84,6 +72,6 @@ body {
 }
 .link:hover:after {
   min-width: 100%;
-  background: #4286f4;
+  background: #4b6cb7;
   opacity: .35;
 }

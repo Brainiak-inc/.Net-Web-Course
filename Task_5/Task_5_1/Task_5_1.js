@@ -1,6 +1,6 @@
 function CharRemover(){
 	let userInput = document.getElementById("userInput").value;
-	let splitter = ["?", "!", ".", ",", "!?", "?!", ";", " ",];
+	let splitter = ["?", "!", ".", ",", "!?", "?!", ";", " "];
 	let letters = {}, result;
 
 	let words = userInput.split(' ');

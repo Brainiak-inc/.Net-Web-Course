@@ -3,7 +3,7 @@ function Calculator(input) {
 		addition: '+', 
 		substraction: '-',
 		multiplication: '*',
-		division: '/'
+		division: '/',
 	};
 
 	operations.operationsOrder = [
@@ -23,7 +23,9 @@ function Calculator(input) {
 
 	for(let i = 0, n = operations.operationsOrder.length; i < n; i++){
 		let calculation = new RegExp('(\\d+\\.?\\d*)([\\' + operations.operationsOrder[i].join('\\') + '])(\\d+\\.?\\d*)');
+		
 		calculation.lastIndex = 0;
+		
 		while(calculation.test(input)){
 			output = _calculate(RegExp.$1, RegExp.$2, RegExp.$3);
 			if (isNaN(output) || !isFinite(output)) {
@@ -44,7 +46,7 @@ function Calculator(input) {
 		    break;
 		    case operations.multiplication: return a * b;
 		    break;
-		    case operations.substraction: return a / b;
+		    case operations.division: return a / b;
 		    break;
 		    default: null;
 		}

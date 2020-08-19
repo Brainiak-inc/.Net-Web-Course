@@ -7,13 +7,22 @@ li{
 
 .Menu{
 	width: 200px;
-	border: 10px black;
+	border-color: black;
+	border-width: 5px;
+
+	margin-top: 20px;
+	margin-left: 10px;
+
 	padding-left: 10px;
+	padding-right: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+
 	border-radius: 10px;
+
 	background-color: #FFA500;
 	box-shadow: 5px 5px #6E0101;
+	
 	font-family: serif;
 	font-weight: bold;
 	font-size: 15px;

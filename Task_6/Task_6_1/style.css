@@ -1,0 +1,20 @@
+li{
+	margin-bottom: 5px;
+	list-style-type: none;
+	color: #6E0101;
+	line-height: 1,5;
+}
+
+.Menu{
+	width: 200px;
+	border: 10px black;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	background-color: #FFA500;
+	box-shadow: 5px 5px #6E0101;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 15px;
+}

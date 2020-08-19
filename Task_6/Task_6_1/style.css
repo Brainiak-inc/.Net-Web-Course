@@ -7,8 +7,9 @@ li{
 
 .Menu{
 	width: 200px;
+	border-style: solid;
 	border-color: black;
-	border-width: 5px;
+	border-width: 1px;
 
 	margin-top: 20px;
 	margin-left: 10px;

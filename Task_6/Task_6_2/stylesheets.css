@@ -1,8 +1,8 @@
 .formContainer{
 	width: 400px;
 	height: 270px;
-	background-color: blue;
-	border: 3px solid darkblue;
+	background-color: #2B67FF;
+	border: 3px solid #211DF2;
 	display: inline-block;	
 }
 

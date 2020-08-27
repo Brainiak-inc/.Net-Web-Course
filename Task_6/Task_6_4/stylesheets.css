@@ -1,0 +1,30 @@
+body{
+	background-color: white;
+}
+.container1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 600px;
+	background-color: lightgray;
+}
+.virtual-hosting{
+	background-color: lightgray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-right: 5px solid white;
+}
+.cloud-hosting{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.server{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-left: 5px solid white;
+}
+img{
+	width: 60px;
+	height: 60px;
+	justify-content: center;
+}

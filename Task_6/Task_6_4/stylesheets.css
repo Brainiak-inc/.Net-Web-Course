@@ -1,16 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+}
 body{
-	background-color: white;
+	display: flex;
+	justify-content: center;
+	background-color: #314f7d;
 }
 .container{
 	display: flex;
-	flex-direction: row;
+	flex-flow: row;
 	align-items: center;
 }
 .form{
 	display: flex;
-	flex-direction: row;
+	flex-flow: row;
 	justify-content: center;
-	margin: 30px;
+	margin: 20px;
 	width: 600px;
 	height: 140px;
 	background-color: white;
@@ -34,22 +40,33 @@ body{
 }
 
 img{
-	padding-top: 5px;
+	flex: 1;
 	width: 55px;
 }
-p{
+.text{
 	flex: 2;
 	font-weight: bold;
-	font-size: 14px;
+	color: #ff660d;
+	font-size: 15px;
+	padding-top: 15px;
+}
+.price{
+	flex: 1.5;
+	font-size: 12px;
 }
 input{
 	color: #fff; 
-  	text-decoration: none; 
   	user-select: none; 
-  	background: rgb(212,75,56); 
-  	padding-top: 5px;
-  	padding-bottom: 2px; 
+  	background: #ff660d; 
+  	flex: 1; 
   	outline: none; 
+  	padding-top: 5px;
+  	padding-bottom: 3px;
+  	padding-left: 6px;
+  	padding-right: 6px;
+  	border: 0;
+  	border-radius: 3px;
+  	font-size: 13px;
 }
 
 input:hover { 
@@ -58,7 +75,3 @@ input:hover {
 input:active { 
 	background: rgb(152,15,0); 
 } 
-p.price{
-	padding-top: 2px;
-	font-size: 11px;
-}

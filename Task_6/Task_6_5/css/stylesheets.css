@@ -126,6 +126,7 @@ textarea:focus, input:focus, button:focus{
     color: #575757;
 }
 
+
 .window-content-editor-close-button{
     display: flex;
     align-items: center;

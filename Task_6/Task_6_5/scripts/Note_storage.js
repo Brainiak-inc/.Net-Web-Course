@@ -5,73 +5,90 @@ class Service{
 	static id = 0;
 
 	add(value){
-		if(value === undefined){
-			throw new SyntaxError('Invalid argument value');
-		}
-		if(typeof(value) != 'object'){
-			throw new SyntaxError('Invalid argument value - not object');
-		}
-		this.newMapList.set(this.id.toString(), value);
-		this.id++;
-	}
-	getByID(inputKey){
-		if (inputKey === undefined || inputKey === null) {
-			throw new SyntaxError('Invalid argument Key');
-		}
-		if (this.newMapList(inputKey.toString())) {
-			return this.newMapList.get(inputKey.toString());
-		}
-		return null;
-	}
-	deleteByID(inputKey){
-		if (inputKey === undefined || inputKey === null) {
-			throw new SyntaxError('Invalid argument Key');
-		}
-		if (this.newMapList.has(inputKey.toString())) {
-			let result = this.newMapList.getByID(inputKey);
-			this.newMapList.delete(inputKey.toString());
+		if (value instanceof Array) {
+			let id = 0;
 
-			return result;
+			for(let key of this.newMapList.keys()){
+				if (parseInt(key) > id) {
+					id = parseInt(key);
+				}
+			}
+
+			id+=1;
+			this.newMapList(`${inputKey}`, value);
+
+			return id;
 		}
-		return null;
+		else{
+			console.log("Argument is  not array");
+
+			return null;
+		}
+	}
+
+	getByID(inputKey){
+		if(this.newMapList.has(`${inputKey}`)){
+			return this.newMapList.get(`${inputKey}`);
+		}
+		else{
+			return null;
+		}
+	}
+
+	getByData(data){
+		let temp = new Map();
+		data = data.toLowerCase();
+
+		for(let key of this.newMapList.keys()){
+			for(let item of this.newMapList.get(key)){
+				item = item.toLowerCase();
+			if (item.includes(data)) {temp.set(key, this.newMapList.get(key));}
+			}
+		}
+		return temp;
+	}
+
+	deleteByID(inputKey){
+		if (newMapList.has(`${inputKey}`)) {
+			newMapList.delete(`${inputKey}`);
+		}
+		else{
+			console.log('There is no element with such ID');
+		}
 	}
 
 	replaceByID(inputKey, value){
-		if (inputKey === undefined || inputKey === null) {
-			throw new SyntaxError('Invalid argument Key');
+		if (this.newMapList.has(`${inputKey}`)) {
+			if (arr instanceof Array) {
+				this.newMapList.set(`${inputKey}`, value);
+			}
+			else{
+				console.log("Programm takes only arrays");
+			}
 		}
-		if (value === undefined) {
-			throw new SyntaxError('Invalid argument value');
+		else{
+			console.log("There is no element with such ID or ID has been entered incorrect");
 		}
-		if(typeof(value) != 'object'){
-			throw new SyntaxError('Invalid argument value - not object');
-		}
-		if (this.newMapList.has(inputKey.toString())) {
-			this.newMapList.set(inputKey.toString, value);
-			return true;
-		}
-		return false;
 	}
 
 	updateByID(inputKey, value){
-		if (inputKey === undefined || inputKey === null) {
-			throw new SyntaxError('Invalid argument value');
+		if (this.newMapList.has(`${inputKey}`)) {
+			if (value instanceof Array) {
+				for(let key in value){
+					if (this.newMapList.get(`${inputKey}`)[key] != value[key]) {
+						this.newMapList.get(`${inputKey}`)[key] = value[key];
+					}
+				}
+			}
+			else{
+				console.log("Programm takes only arrays");
+			}
 		}
-		if(typeof(value) != 'object'){
-			throw new SyntaxError('Invalid argument value - not object');
+		else{
+			console.log("There is no element with such ID or ID has been entered incorrect");
 		}
-		if (this.newMapList.has(inputKey, value)) {
-
-		}
-		if (this.newMapList.has(inputKey.toString())) {
-			let object = this.getByID(inputKey);
-			object = Object.assign(object, value);
-
-			this.replaceByID(inputKey, value);
-			return true;
-		}
-		return false;
 	}
+
 	getAll(){
 		return Array.from(this.newMapList.values());
 	}

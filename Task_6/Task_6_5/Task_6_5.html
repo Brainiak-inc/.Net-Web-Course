@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<title>ToDo List</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheets.css">
+	<script type="text/javascript" src="scripts/Note_storage.js"></script>
 </head>
-<body>
+<body class="body-container">
 	<header>
 		<div class="search-box">
 			<img class="search-img" src="properties/search.png">
-			<input type="search" name="" placeholder="Поиск">
+			<input type="search" name="" placeholder="Поиск" oninput="search(this.value)">
 		</div>
 	</header>
 	<main>
@@ -18,13 +19,13 @@
 				<div class="window-form-editor">
 					<div class="window-title-editor">
 						<input type="text" class="window-title-editor-text" placeholder="Введите заголовок">
-						<div class="window-title-editor-close-button">
+						<div class="window-title-editor-close-button" onclick="editorCloseButton()">
 							<img class="window-content-editor-close-button-img" src="">
 						</div>
 					</div>
 					<textarea class="textarea-window-editor" placeholder="Введите текст заметки"></textarea>
 					<div class="window-footer-editor">
-						<button class="window-editor-savebutton"></button>
+						<button class="window-editor-savebutton" onclick="saveClick()"></button>
 					</div>
 				</div>
 			</div>
@@ -32,11 +33,11 @@
 		<div class="content-container">
 			
 		</div>
-		<div class="add-button">
+		<div class="add-button" onclick="addButtonClick()">
 			<img class="add-button-img" src="properties/plus.png">
 		</div>
-		<script type="text/javascript" src="/scripts/script.js"></script>
 	</main>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
 	<footer>
 		
 	</footer>

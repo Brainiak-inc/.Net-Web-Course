@@ -1,8 +1,8 @@
-"use strict"
-
 class Service{
-	newMapList = new Map();
-	static id = 0;
+
+	constructor(){
+	this.newMapList = new Map();
+}
 
 	add(value){
 		if (value instanceof Array) {
@@ -15,7 +15,7 @@ class Service{
 			}
 
 			id+=1;
-			this.newMapList(`${inputKey}`, value);
+			this.newMapList.set(`${id}`, value);
 
 			return id;
 		}

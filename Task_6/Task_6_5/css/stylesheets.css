@@ -4,14 +4,14 @@
     font-family: sans-serif;
 }
 
-/*.note-editor{
+.note-editor{
     display: none;
     width: 100%;
     height: 100%;
     z-index: 99999;
     position: fixed;
     pointer-events: none;
-}*/
+}
 
 
 header{
@@ -107,6 +107,12 @@ textarea:focus, input:focus, button:focus{
     padding-bottom: 10px;
     border: 1px solid black;
     box-shadow: 0px 0px 10px black;
+}
+
+.content-to-top{
+    opacity: 0;
+    display: block;
+    pointer-events: auto
 }
 
 .content-element:hover{

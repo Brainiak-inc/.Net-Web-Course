@@ -6,7 +6,6 @@ let removedNotes = [];
 let contentDown = true;
 let treatmentList = new Map();
 let moveMap = new Map();
-
 let contentChangerDown = true;
 
 function search(inputValue){
@@ -33,15 +32,15 @@ function search(inputValue){
 function ContentManager(step) {
 
     queue.push(step);
-    if (сontentManagerDown) {
+    if (contentChangerDown) {
 
-        сontentManagerDown = false; 
+        contentChangerDown = false; 
 
         let temp = document.getElementsByClassName('content-element');
         let noteInContent = [];
     
         for (let note of temp) {    
-            notesOnPage.push(note);
+            noteInContent.push(note);
 
             if (desktop) {
                 note.style.left = `${(note.getBoundingClientRect()['x'])}px`;
@@ -88,7 +87,7 @@ function ContentManager(step) {
 
                 if (curStep.get(id) == 'rm' && document.getElementById(id)) {
 
-                    storage.deleteById(id);
+                    noteStorage.deleteByID(id);
                     let item = document.getElementById(id);
                     noteInContent.splice(noteInContent.indexOf(item), 1);
 

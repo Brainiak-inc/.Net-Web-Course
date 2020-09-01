@@ -49,8 +49,8 @@ class Service{
 	}
 
 	deleteByID(inputKey){
-		if (newMapList.has(`${inputKey}`)) {
-			newMapList.delete(`${inputKey}`);
+		if (this.newMapList.has(`${inputKey}`)) {
+			this.newMapList.delete(`${inputKey}`);
 		}
 		else{
 			console.log('There is no element with such ID');

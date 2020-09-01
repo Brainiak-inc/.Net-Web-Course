@@ -27,8 +27,8 @@ function publicNote(){
 function NoteClick(note){
 	editingNote = note;
 	let selectedNode = noteStorage.getByID(note.id);
-	titleEditor.value = selectNote[0];
-	textEditor.value = selectNode[1];
+	titleEditor.value = selectedNode[0];
+	textEditor.value = selectedNode[1];
 	saveButton.textContent = "Сохранить";
 	editor.classList.add('content-to-top');
 	ChangeOpacity(editor, 1, 20);
@@ -105,9 +105,9 @@ function notesAdder(id, title, text, opacity = false){
 	contentElementText.innerHTML = text.replace(/\n/g, '<br>');
 
 	let deleteButton = document.createElement('div');
-	closeButton.className = 'window-content-editor-close-button';
-	closeButton.id = id;
-	closeButton.setAttribute('onclick', 'deleteClick(event)');
+	deleteButton.className = 'window-content-editor-close-button';
+	deleteButton.id = id;
+	deleteButton.setAttribute('onclick', 'closeClick(event)');
 
 	let deleteButtonImg = document.createElement('img');
 	deleteButtonImg.src = 'properties/cancel.png';

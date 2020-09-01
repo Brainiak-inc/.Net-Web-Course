@@ -89,15 +89,15 @@ textarea:focus, input:focus, button:focus{
 .content-container{
     display: flex;
     flex-flow: column;
-    margin: 0;
-    width: 35%;
+    align-items: center;
+    width: 100%;
     padding-top: 55px;
     padding-bottom: 55px;
-    align-items: center;
+    z-index: 0;
 }
 
 .content-element{
-    width: 100%;
+    width: 35%;
     margin: 0;
     padding: 15px;
     overflow: hidden;

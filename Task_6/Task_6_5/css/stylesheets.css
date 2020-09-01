@@ -13,7 +13,6 @@
     pointer-events: none;
 }
 
-
 header{
 	border: 1px solid black;
 	padding-top: 10px;
@@ -112,7 +111,7 @@ textarea:focus, input:focus, button:focus{
 .content-to-top{
     opacity: 0;
     display: block;
-    pointer-events: auto
+    pointer-events: auto;
 }
 
 .content-element:hover{
@@ -156,10 +155,9 @@ textarea:focus, input:focus, button:focus{
     box-shadow: -1px -1px 10px #AD000C;
 }
 
-.window-title-editor-close-button-img{
-    width: 8px;
-    height: 8px;
-    margin: auto;
+.window-content-editor-close-button-img{
+   width: 60%;
+    height: 60%; 
 }
 
 .window-editor{

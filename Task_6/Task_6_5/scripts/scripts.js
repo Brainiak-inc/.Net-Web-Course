@@ -68,7 +68,7 @@ function saveClick(){
 	else{
 		let id = noteStorage.add([titleEditor.value, textEditor.value]);
 		let newItem = new Map();
-		newItem.set(AddNote(id, titleEditor.value, textEditor.value, true), "cr");
+		newItem.set(notesAdder(id, titleEditor.value, textEditor.value, true), "cr");
 		ContentManager(newItem);
 	}
 	editorCloseButton();
@@ -80,6 +80,7 @@ function editorCloseButton(){
 			editor.classList.remove('content-to-top')
 		}
 		);
+	editingNote = null;
 }
 
 function notesAdder(id, title, text, opacity = false){

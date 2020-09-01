@@ -90,6 +90,6 @@ class Service{
 	}
 
 	getAll(){
-		return Array.from(this.newMapList.values());
+		return this.newMapList;
 	}
 }

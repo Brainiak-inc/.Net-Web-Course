@@ -194,38 +194,8 @@ function ContentManager(step) {
         сontentManagerDown = true;
     }
 } 
-function MoveItems() {
-    let notesInContent = document.getElementsByClassName('content-element');
-    let top = 50;
-    let upperOffset = -10;
-    let bottomOffset = 50;
 
-    for (let note of notesInContent) {
-        if (!hiddenNotes.includes(note) && !removedNotes.includes(note)) {
-
-            if (top < window.innerHeight || note.getBoundingClientRect()['top']-10 < window.innerHeight || moveMap.has(note) ) {
-                if (note.getBoundingClientRect()['top'] > window.innerHeight) {
-
-                    note.style.top = `${window.innerHeight + upperOffset}px`;
-                    upperOffset += (note.getBoundingClientRect()['height'] + 10);
-                }
-
-                if (note.getBoundingClientRect()['top'] < 55-note.getBoundingClientRect()['height']) {
-                    note.style.top = `${bottomOffset-note.getBoundingClientRect()['height']}px`;
-                    bottomOffset -= (note.getBoundingClientRect()['height'] + 10);
-                }
-                MoveItem(note, top);
-            }
-            else {                              
-                note.style.top = `${top}px`;
-            } 
-           
-            top = top + note.getBoundingClientRect()['height'] + 10;
-        }
-    }
-}
-
-function ChangeOpacity(item, targetOpacity, speed = 35, func = null) {
+function ChangeOpacity(item, targetOpacity, speed = 40, func = null) {
 
     if (treatmentList.has(item)) {   
 
@@ -244,7 +214,7 @@ function ChangeOpacity(item, targetOpacity, speed = 35, func = null) {
               
                 clearInterval(changeTreatment);
     
-                if (opacity.toFixed(0) == 0) {    // TODO
+                if (opacity.toFixed(0) == 0) {
 
                     if (func) {
                         func();
@@ -308,7 +278,7 @@ function MoveItem(note, target) {
     
         let mooving = setInterval(function() {
     
-            if ((note.getBoundingClientRect()['y']-10 > window.innerHeight && topOffset > step) || (note.getBoundingClientRect()['y']-10 < 0 && topOffset < 0-step)) {
+            if ((note.getBoundingClientRect()['y']-10 > window.innerHeight && topOffset > step) || (note.getBoundingClientRect()['y'] - 10 < 0 && topOffset < 0 - step)) {
 
                 note.style.top = `${moveMap.get(note)}px`;
             }
@@ -353,3 +323,35 @@ function MoveItem(note, target) {
         }, 5);
     }
 }
+
+function MoveItems() {
+    let notesInContent = document.getElementsByClassName('content-element');
+    let top = 50;
+    let upperOffset = -10;
+    let bottomOffset = 50;
+
+    for (let note of notesInContent) {
+        if (!hiddenNotes.includes(note) && !removedNotes.includes(note)) {
+
+            if (top < window.innerHeight || note.getBoundingClientRect()['top']-10 < window.innerHeight || moveMap.has(note) ) {
+                if (note.getBoundingClientRect()['top'] > window.innerHeight) {
+
+                    note.style.top = `${window.innerHeight + upperOffset}px`;
+                    upperOffset += (note.getBoundingClientRect()['height'] + 10);
+                }
+
+                if (note.getBoundingClientRect()['top'] < 55-note.getBoundingClientRect()['height']) {
+                    note.style.top = `${bottomOffset-note.getBoundingClientRect()['height']}px`;
+                    bottomOffset -= (note.getBoundingClientRect()['height'] + 10);
+                }
+                MoveItem(note, top);
+            }
+            else {                              
+                note.style.top = `${top}px`;
+            } 
+           
+            top = top + note.getBoundingClientRect()['height'] + 10;
+        }
+    }
+}
+

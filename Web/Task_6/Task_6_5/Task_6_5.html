@@ -15,17 +15,17 @@
 	</header>
 	<main>
 		<div class="note-editor" id="editor">
-			<div class="window-editor" onclick="editorCloseButton()">
+			<div class="window-editor">
 				<div class="window-form-editor">
 					<div class="window-title-editor">
 						<input type="text" class="window-title-editor-text" placeholder="Введите заголовок">
-						<div class="window-title-editor-close-button" onclick="editorCloseButton()">
+						<div class="window-title-editor-close-button" onclick="editorCloseButtonClick()">
 							<img class="window-content-editor-close-button-img" src="properties/cancel.png">
 						</div>
 					</div>
 					<textarea class="textarea-window-editor" placeholder="Введите текст заметки"></textarea>
 					<div class="window-footer-editor">
-						<button class="window-editor-savebutton" onclick="saveClick()"></button>
+						<button class="window-editor-savebutton" onclick="editorSaveClick()"></button>
 					</div>
 				</div>
 			</div>

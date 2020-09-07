@@ -1,0 +1,1 @@
+#[Просмотреть страницу (htmlpreview.github.io)](http://htmlpreview.github.io/?https://github.com/Brainiak-inc/xt_net_web/blob/master/Task_6/Task_6_5/Task_6_5.html "Просмотреть страницу")

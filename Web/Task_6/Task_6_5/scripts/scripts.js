@@ -88,18 +88,12 @@ function editorSaveClick() {
     editorCloseButtonClick();
 }
 
-
 function editorCloseButtonClick() {
     
     ChangeOpacity(editor, 0, 20, function() {
         editor.classList.remove('content-to-top')} 
         );
     editingNote = null;
-}
-
-function editorFormClick() {
-    
-    event.stopImmediatePropagation();
 }
 
 function addNote(id, title, text, opacity = false) {

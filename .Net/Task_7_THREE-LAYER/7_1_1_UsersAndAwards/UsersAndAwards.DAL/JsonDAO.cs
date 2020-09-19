@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UsersAndAwards.DAL
 {
-    class JsonDAO
+    public class JsonDAO
     {
         private static JsonDataBase dataBase;
         public static JsonDataBase Get(string path)

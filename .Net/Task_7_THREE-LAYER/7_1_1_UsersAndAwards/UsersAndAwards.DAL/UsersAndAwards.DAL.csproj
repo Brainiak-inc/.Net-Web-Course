@@ -44,8 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonAwards.cs" />
     <Compile Include="JsonAwardsConnectionsDAO.cs" />
+    <Compile Include="JsonDAO.cs" />
     <Compile Include="JsonDataBase.cs" />
+    <Compile Include="JsonEmblem.cs" />
+    <Compile Include="JsonUsers.cs" />
     <Compile Include="UserDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

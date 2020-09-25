@@ -1,0 +1,9 @@
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\bin\Debug\UsersAndAwards.DAL.Interfaces.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\bin\Debug\UsersAndAwards.DAL.Interfaces.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\bin\Debug\UsersAndAwards.Entities.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\bin\Debug\UsersAndAwards.Entities.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\obj\Debug\UsersAndAwards.DAL.Interfaces.csprojAssemblyReference.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\obj\Debug\UsersAndAwards.DAL.Interfaces.csproj.CoreCompileInputs.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\obj\Debug\UsersAndAwards.DAL.Interfaces.csproj.CopyComplete
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\obj\Debug\UsersAndAwards.DAL.Interfaces.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL.Interfaces\obj\Debug\UsersAndAwards.DAL.Interfaces.pdb

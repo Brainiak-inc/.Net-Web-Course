@@ -1,0 +1,13 @@
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.DAL.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.DAL.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.DAL.Interfaces.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.Entities.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.DAL.Interfaces.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\UsersAndAwards.Entities.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\obj\Debug\UsersAndAwards.DAL.csprojAssemblyReference.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\obj\Debug\UsersAndAwards.DAL.csproj.CoreCompileInputs.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\obj\Debug\UsersAndAwards.DAL.csproj.CopyComplete
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\obj\Debug\UsersAndAwards.DAL.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.DAL\obj\Debug\UsersAndAwards.DAL.pdb

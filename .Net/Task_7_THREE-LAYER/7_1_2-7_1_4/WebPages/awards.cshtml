@@ -1,0 +1,51 @@
+﻿@using UsersAndAwards.BLL.Interfaces;
+@using UsersAndAwards.Common;
+@using UsersAndAwards.Entities;
+@using WebPages.PL.Logic;
+
+@{
+    DependencyResolver resolver = WebResolver.Get("");
+    IAwardManager bllAwards = resolver.awardManager;
+    IEmblemManager bllEmblems = resolver.emblemManager;
+    IAwardsConnections awardsConnections = resolver.awardsConnections;
+
+    int counter = 1;
+    foreach (Award award in bllAwards.GetAllAwards())
+    {
+        Page.id = counter;
+        Page.User = false;
+        Page.aditional = null;
+        Page.itemId = award.Id;
+        Page.Name = award.Title;
+        Page.aditionalContent = null;
+        Page.AvatarLink = string.Empty;
+        Page.UserAvatar = "./images/award.png";
+        Page.DefaultAvatarVisibility = string.Empty;
+        List<string> awardsUsers = awardsConnections.GetAllAwardedUsers(award).Select(item => item.Name).ToList();
+
+        if (bllEmblems.IsElementGetEmblem((IGetID)award))
+        {
+            Page.DefaultAvatarVisibility = "hidden";
+            Page.AvatarLink = $"style=background-image:url({bllEmblems.EmblemPath((IGetID)award)})";
+        }
+
+        if (awardsUsers.Count > 0)
+        {
+            Page.aditional = "Carriers:";
+            Page.aditionalContent = string.Join("\n", awardsUsers);
+        }
+
+        @RenderPage("~/pages/UserForm.cshtml");
+
+        counter++;
+    }
+
+    Page.User = false;
+    Page.Title = "Awards";
+    Page.RedirectLink = "./index.cshtml";
+    Page.EditorImage = "./images/award.png";
+    Page.UsersAwardsButtonImg = "./images/user.svg";
+    Layout = "~/pages/MainPage.cshtml";
+}
+
+

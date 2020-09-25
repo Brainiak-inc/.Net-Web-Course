@@ -1,0 +1,6 @@
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\bin\Debug\UsersAndAwards.Entities.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\bin\Debug\UsersAndAwards.Entities.pdb
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\obj\Debug\UsersAndAwards.Entities.csprojAssemblyReference.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\obj\Debug\UsersAndAwards.Entities.csproj.CoreCompileInputs.cache
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\obj\Debug\UsersAndAwards.Entities.dll
+E:\GitRep\xt_net_web\.Net\Task_7_THREE-LAYER\7_1_2-7_1_4\UsersAndAwards.Entities\obj\Debug\UsersAndAwards.Entities.pdb

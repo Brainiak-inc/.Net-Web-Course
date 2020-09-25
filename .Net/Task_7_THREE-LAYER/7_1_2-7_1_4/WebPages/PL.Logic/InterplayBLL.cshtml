@@ -1,0 +1,308 @@
+﻿@using UsersAndAwards.BLL.Interfaces;
+@using UsersAndAwards.DAL;
+@using UsersAndAwards.DAO;
+@using UsersAndAwards.Common;
+@using UsersAndAwards.Entities;
+@using WebPages.PL.Logic;
+@using Newtonsoft.Json;
+
+
+@{
+    DependencyResolver resolver = WebResolver.Get("");
+    IUserManager userManager = resolver.UserLogic;
+    IAwardManager awardsManager = resolver.awardManager;
+    IEmblemManager emblemManager = resolver.emblemManager;
+    IAwardsConnections awardsConnections = resolver.awardsConnections;
+
+    if (IsPost)
+    {
+        if (Request["type"] == "awardRequest")
+        {
+            try
+            {
+                Guid requestedID = Guid.Parse(Request["id"]);
+                User user = userManager.GetAllUsers().Where(item => item.Id == requestedID).FirstOrDefault();
+
+                if (user != null)
+                {
+                    List<Award> awardList = awardsConnections.GetAllGivenAwards(user);
+                    Response.Write(JsonConvert.SerializeObject(awardList.Select(item => item.Id)));
+                    return;
+                }
+            }
+            catch (ArgumentException)
+            {
+
+                Response.Write(null);
+                return;
+            }
+            Response.Write(null);
+            return;
+        }
+        Response.Write(null);
+        return;
+    }
+    else if (Request["type"] == "awardSet")
+    {
+        try
+        {
+            List<Guid> userAward = JsonConvert.DeserializeObject<List<Guid>>(Request["awards"]);
+            User user = userManager.GetUserByID(Guid.Parse(Request["user"]));
+
+            if (user != null)
+            {
+                List<Award> awardOfUser = awardsConnections.GetAllGivenAwards(user);
+                foreach (Award award in awardOfUser)
+                {
+                    if (!userAward.Contains(award.Id))
+                    {
+                        awardsConnections.RemoveAwardFromSingleUser(user, award);
+                    }
+                }
+                awardOfUser = awardsConnections.GetAllGivenAwards(user);
+
+                foreach (Award award in awardsManager.GetAllAwards())
+                {
+                    if (userAward.Contains(award.Id) && !awardOfUser.Contains(award))
+                    {
+                        awardsConnections.AddAwardtoUser(user, award);
+                    }
+                }
+                awardOfUser = awardsConnections.GetAllGivenAwards(user);
+
+                Response.Write(JsonConvert.SerializeObject(new String[] { "\n" + string.Join("\n", awardOfUser.Select(item => item.Title)) }));
+                return;
+            }
+        }
+        catch (ArgumentException)
+        {
+
+            Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+        return;
+    }
+    else if (Request["type"] == "awardsUsersRequest")
+    {
+        try
+        {
+            Guid requestedGuid = Guid.Parse(Request["id"]);
+            User user = userManager.GetAllUsers().Where(item => item.Id == requestedGuid).FirstOrDefault();
+
+            if (user != null)
+            {
+                List<Award> awardList = awardsConnections.GetAllGivenAwards(user);
+                Response.Write("\n" + string.Join("\n", awardList.Select(item => item.Title)));
+                return;
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(false);
+            return;
+        }
+        Response.Write(false);
+        return;
+    }
+    else if (Request["type"] == "userUpdate")
+    {
+        try
+        {
+            Guid id = Guid.Parse(Request["id"]);
+            User user = userManager.GetUserByID(id);
+
+            if (user != null)
+            {
+                string[] fields = JsonConvert.DeserializeObject<string[]>(Request["params"]);
+
+                if (fields[1] != "")
+                {
+                    string[] dateSplit = fields[1].Split();
+                    DateTime date = new DateTime(Int32.Parse(dateSplit[0]), Int32.Parse(dateSplit[1]), Int32.Parse(dateSplit[2]));
+                    int age = (DateTime.Now.Year - date.Year - 1) + (((DateTime.Now.Month > date.Month) || ((DateTime.Now.Month == date.Month) && (DateTime.Now.Day >= date.Day))) ? 1 : 0);
+
+                    if (userManager.UpdateUser(id, fields[0], age, date))
+                    {
+                        Response.Write(JsonConvert.SerializeObject(new string[] { user.Id.ToString(), user.Name, user.Age.ToString(), user.DateOfBirth.ToString("D") }));
+                        return;
+                    }
+                }
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(JsonConvert.SerializeObject(null));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(null));
+        return;
+    }
+    else if (Request["type"] == "userCreate")
+    {
+        string[] fields = JsonConvert.DeserializeObject<string[]>(Request["params"]);
+        if (fields[0] != "" && fields[1]!="")
+        {
+            try
+            {
+                string[] dateSplit = fields[1].Split('-');
+                DateTime date = new DateTime(Int32.Parse(dateSplit[0]), Int32.Parse(dateSplit[1]), Int32.Parse(dateSplit[2]));
+                int age = (DateTime.Now.Year - date.Year - 1) + (((DateTime.Now.Month > date.Month) || ((DateTime.Now.Month == date.Month) && (DateTime.Now.Day >= date.Day))) ? 1 : 0);
+                User user = userManager.AddUser(fields[0], date, age);
+
+                if (user != null)
+                {
+                    Response.Write(JsonConvert.SerializeObject(new string[] { user.Id.ToString(), user.Name, user.DateOfBirth.ToString(), user.Age.ToString() }));
+                    return;
+                }
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e);
+                Response.Write(JsonConvert.SerializeObject(null));
+                return;
+            }
+        }
+        Response.Write(JsonConvert.SerializeObject(null));
+        return;
+    }
+    else if (Request["type"] == "userRemove")
+    {
+        try
+        {
+            Guid id = Guid.Parse(Request["id"]);
+            User user = userManager.GetUserByID(id);
+
+            if (user != null && userManager.RemoveUser(user))
+            {
+                Response.Write(JsonConvert.SerializeObject(new string[] { "true" }));
+                return;
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+        return;
+    }
+    else if (Request["type"] == "awardUpdate")
+    {
+        try
+        {
+            Guid id = Guid.Parse(Request["id"]);
+            Award award = awardsManager.GetAwardByID(id);
+            string[] fields = JsonConvert.DeserializeObject<string[]>(Request["params"]);
+
+            if (award != null && awardsManager.UpdateAward(id, fields[0]))
+            {
+                Response.Write(JsonConvert.SerializeObject(new string[] { award.Id.ToString(), award.Title }));
+                return;
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(JsonConvert.SerializeObject(null));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(null));
+        return;
+    }
+    else if (Request["type"] == "awardCreate")
+    {
+        string[] fields = JsonConvert.DeserializeObject<string[]>(Request["params"]);
+        if (fields[0] != "")
+        {
+            Award award = awardsManager.AddAward(fields[0]);
+
+            if (award != null)
+            {
+                Response.Write(JsonConvert.SerializeObject(new string[] { award.Id.ToString(), award.Title }));
+                return;
+            }
+        }
+        Response.Write(JsonConvert.SerializeObject(null));
+        return;
+    }
+    else if (Request["type"] == "awardRemove")
+    {
+        try
+        {
+            Guid id = Guid.Parse(Request["id"]);
+            Award award = awardsManager.GetAwardByID(id);
+
+            if (award != null)
+            {
+                if (awardsManager.RemoveAward(award))
+                {
+                    Response.Write(JsonConvert.SerializeObject(new string[] { "true" }));
+                    return;
+                }
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+        return;
+    }
+    else if (Request["type"] == "filestream")
+    {
+        try
+        {
+            var uploadFile = Request.Files[0];
+            string extension = uploadFile.FileName.Split('-').LastOrDefault();
+            IGetID item = null;
+
+            switch (Request["for"])
+            {
+                case "user":
+                    item = (IGetID)userManager.GetUserByID(Guid.Parse(Request["id"]));
+                    break;
+                case "award":
+                    item = (IGetID)awardsManager.GetAwardByID(Guid.Parse(Request["id"]));
+                    break;
+            }
+            string pathToReturn = $"url(\"{emblemManager.CreateEmblem(item, extension, new BinaryReader(uploadFile.InputStream))}\")";
+            Response.Write(JsonConvert.SerializeObject(new string[] { "true", pathToReturn }));
+        }
+        catch (SystemException)
+        {
+            Response.Write(JsonConvert.SerializeObject(new string[] { "false", null }));
+            return;
+        }
+    }
+    else if (Request["type"] == "removeEmblem")
+    {
+        try
+        {
+            IGetID item = null;
+
+            switch (Request["for"])
+            {
+                case "user":
+                    item = (IGetID)userManager.GetUserByID(Guid.Parse(Request["id"]));
+                    break;
+                case "award":
+                    item = (IGetID)awardsManager.GetAwardByID(Guid.Parse(Request["id"]));
+                    break;
+            }
+            if (item != null && emblemManager.RemoveEmblem(item))
+            {
+                Response.Write(JsonConvert.SerializeObject(new string[] { "true" }));
+                return;
+            }
+        }
+        catch (ArgumentException)
+        {
+            Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+            return;
+        }
+        Response.Write(JsonConvert.SerializeObject(new string[] { "false" }));
+        return;
+    }
+
+}

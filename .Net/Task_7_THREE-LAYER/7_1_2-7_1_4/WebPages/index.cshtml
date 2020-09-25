@@ -1,0 +1,68 @@
+﻿@using UsersAndAwards.BLL.Interfaces;
+@using UsersAndAwards.Common;
+@using UsersAndAwards.Entities;
+@using WebPages.PL.Logic;
+
+@{
+    string path = Server.MapPath("");
+    DependencyResolver resolver = WebResolver.Get(path);
+    IUserManager userManager = resolver.UserLogic;
+    IAwardManager awardManager = resolver.awardManager;
+    IEmblemManager emblemManager = resolver.emblemManager;
+    IAwardsConnections awardsConnections = resolver.awardsConnections;
+
+    if (!File.Exists($"{WebResolver.Path}/AppData/notFirstRun"))
+    {
+        userManager.AddUser("Bruce Wayne", new DateTime(1990, 12, 25), 29);
+        userManager.AddUser("Alfred Pennyworth", new DateTime(1950, 7, 11), 70);
+
+        awardManager.AddAward("City Service Award");
+        awardManager.AddAward("Key to the city");
+        awardManager.AddAward("Batcave cleanup reward");
+
+        BinaryReader reader = new BinaryReader(new FileStream($"{path}\\images\\example.png", FileMode.Open));
+        emblemManager.CreateEmblem((IGetID)userManager.GetAllUsers()[1], "png", reader);
+        awardsConnections.AddAwardtoUser(userManager.GetAllUsers()[2], awardManager.GetAllAwards()[2]);
+        File.Create($"{WebResolver.Path}/AppData/notFirstRun");
+    }
+    int counter = 1;
+    List<User> userList = userManager.GetAllUsers();
+
+    foreach (User user in userList)
+    {
+        Page.id = counter;
+        Page.User = true;
+        Page.Age = user.Age;
+        Page.Name = user.Name;
+        Page.itemId = user.Id;
+        Page.additional = null;
+        Page.additionalContent = null;
+        Page.Data = user.DateOfBirth.ToString("D");
+        Page.AvatarLink = string.Empty;
+        Page.DefaultAvatarVisibility = string.Empty;
+        if (emblemManager.IsElementGetEmblem((IGetID)user))
+        {
+            Page.DefaultAvatarVisibility = "hidden";
+            Page.AvatarLink = $"style=background-image:url({emblemManager.EmblemPath((IGetID)user)})";
+        }
+        List<string> userAwards = awardsConnections.GetAllGivenAwards(user).Select(item => item.Title).ToList();
+
+        if (userAwards.Count > 0)
+        {
+            Page.aditional = "\nAwards:";
+            Page.aditionalContent = "\n" + string.Join("\n", userAwards);
+        }
+        Page.UserAvatar = "./images/user.png";
+
+        @RenderPage("~/pages/UserForm.cshtml");
+        counter++;
+    }
+    Page.User = true;
+    Page.Title = "Users";
+    Page.EditorImage = "./images/user.png";
+    Page.UsersAwardsButtonImg = "./images/award.png";
+    Page.RedirectLink = "./awards.cshtml";
+    Page.AwardsList = awardManager.GetAllAwards();
+    Layout = "~/pages/MainPage.cshtml";
+}
+
